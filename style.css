@@ -1061,28 +1061,3 @@ body {
 }
 
 
-/* Hero Image */
-.hero-slider .slide {
-  background-size: cover;
-  background-position: center;
-  height: 100vh; /* full height for all screens */
-}
-
-.hero-text h1 {
-  font-size: 2rem;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-}
-
-/* Only adjust text size on small screens */
-@media (max-width: 768px) {
-  .hero-text h1 {
-    font-size: 1.5rem;
-  }
-  .hero-text p {
-    font-size: 1rem;
-  }
-}
-
