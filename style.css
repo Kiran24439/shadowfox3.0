@@ -1139,5 +1139,22 @@ body {
     font-size: 0.95rem;
   }
 }
+/* Mobile Hero Background Fix */
+@media (max-width: 768px) {
+  .hero-slider .slide {
+    background-position: top center;  /* show top part clearly */
+    background-size: contain;         /* show full image without cropping */
+    background-repeat: no-repeat;
+    height: 250px;                    /* smaller height for mobile */
+  }
+
+  .hero-text h1 {
+    font-size: 1.2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.9rem;
+  }
+}
 
 
