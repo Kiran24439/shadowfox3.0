@@ -1060,101 +1060,29 @@ body {
     100% { opacity: 1; transform: translateY(0); }
 }
 
-/* ===============================
-   MOBILE RESPONSIVE FIXES
-=================================*/
 
-/* Navigation */
-.site-header {
-  flex-wrap: wrap;
+/* Hero Image */
+.hero-slider .slide {
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* full height for all screens */
 }
 
-.site-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
+.hero-text h1 {
+  font-size: 2rem;
 }
 
-.nav-toggle {
-  display: none;
+.hero-text p {
+  font-size: 1.2rem;
 }
 
-/* Mobile view */
+/* Only adjust text size on small screens */
 @media (max-width: 768px) {
-  .site-nav {
-    display: none;
-    width: 100%;
-    background: #0066cc;
-    text-align: center;
-    padding: 1rem 0;
-  }
-
-  .site-nav.open {
-    display: block;
-  }
-
-  .site-nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  .nav-toggle {
-    display: block;
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #333;
-  }
-
-  /* Hero Slider */
-  .hero-slider .slide {
-    height: 300px; /* smaller height for mobile */
-    background-size: cover;
-    background-position: center;
-  }
-
   .hero-text h1 {
     font-size: 1.5rem;
   }
   .hero-text p {
     font-size: 1rem;
   }
-
-  /* Cards */
-  .choose-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  /* Testimonials */
-  .testimonial-container {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-
-  .testimonial p {
-    font-size: 0.95rem;
-  }
 }
-/* Mobile Hero Background Fix */
-@media (max-width: 768px) {
-  .hero-slider .slide {
-    background-position: top center;  /* show top part clearly */
-    background-size: contain;         /* show full image without cropping */
-    background-repeat: no-repeat;
-    height: 250px;                    /* smaller height for mobile */
-  }
-
-  .hero-text h1 {
-    font-size: 1.2rem;
-  }
-
-  .hero-text p {
-    font-size: 0.9rem;
-  }
-}
-
 
