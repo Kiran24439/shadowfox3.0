@@ -1060,3 +1060,84 @@ body {
     100% { opacity: 1; transform: translateY(0); }
 }
 
+/* ===============================
+   MOBILE RESPONSIVE FIXES
+=================================*/
+
+/* Navigation */
+.site-header {
+  flex-wrap: wrap;
+}
+
+.site-nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .site-nav {
+    display: none;
+    width: 100%;
+    background: #0066cc;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .site-nav.open {
+    display: block;
+  }
+
+  .site-nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .nav-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
+  }
+
+  /* Hero Slider */
+  .hero-slider .slide {
+    height: 300px; /* smaller height for mobile */
+    background-size: cover;
+    background-position: center;
+  }
+
+  .hero-text h1 {
+    font-size: 1.5rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+
+  /* Cards */
+  .choose-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Testimonials */
+  .testimonial-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .testimonial p {
+    font-size: 0.95rem;
+  }
+}
+
+
